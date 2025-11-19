@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERENDI CAT - For Love, For Cat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; }
+        .section-padding { padding: 8rem 0; }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <i class="fa fa-paw text-orange-500 text-2xl"></i>
+                <span class="text-2xl font-bold text-gray-900">SERENDI CAT</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#products" class="font-medium hover:text-orange-500 transition">Products</a>
+                <a href="#services" class="font-medium hover:text-orange-500 transition">Services</a>
+                <a href="#community" class="font-medium hover:text-orange-500 transition">Community</a>
+                <a href="#social-good" class="font-medium hover:text-orange-500 transition">Social Good</a>
+                <a href="#membership" class="font-medium hover:text-orange-500 transition">Membership</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#login" class="hidden md:block px-4 py-2 font-medium hover:text-orange-500">Login</a>
+                <a href="#signup" class="px-6 py-2 bg-orange-500 text-white rounded-full font-medium hover:bg-orange-600 transition shadow-md hover:shadow-lg">Join Now</a>
+                <button class="md:hidden text-gray-800 text-xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-white to-gray-100">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6">
+                    For Love, <br>For Your Feline Family
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg">
+                    Transparent products, scientific feeding, and a caring community—redefining cat parenting with trust and love.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#membership" class="px-8 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition shadow-lg hover:shadow-xl">
+                        Get Membership
+                    </a>
+                    <a href="#download" class="px-8 py-3 bg-white text-orange-500 border border-orange-500 rounded-full font-semibold hover:bg-orange-50 transition shadow-md">
+                        <i class="fa fa-download mr-2"></i> Download App
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-6">
+                    <div class="flex -space-x-4">
+                        <img src="https://cdn.royalcanin-weshare-online.io/ljLw-m8BN5A8uWWAhDSd/v2/ec67th-british-shorthair-cat-lying-down-on-a-white-rug-next-to-a-feeding-bowl?w=1440&fm=jpg&auto=format%2Ccompress" alt="Cat Parent" class="w-12 h-12 rounded-full border-2 border-white">
+                        <img src="https://www.petpetin.com/uploads/pexels_david_yu_17393531_0275ebc11d.jpeg" alt="Cat Parent" class="w-12 h-12 rounded-full border-2 border-white">
+                        <img src="http://copyright.bdstatic.com/vcg/creative/9b7ce25284246a1ed500b9f462cefd54.jpg@wm_1,k_cGljX2JqaHdhdGVyLmpwZw==" alt="Cat Parent" class="w-12 h-12 rounded-full border-2 border-white">
+                    </div>
+                    <div>
+                        <div class="flex items-center text-yellow-400 mb-1">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <span class="ml-2 text-gray-700 font-medium">4.8/5</span>
+                        </div>
+                        <p class="text-gray-600 text-sm">Trusted by 10,000+ cat parents</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+                <img src="https://www.katespet.com/uploads/wenan/diqipian/wenzhang-7%20(2).jpg" alt="Happy Cat with SERENDI Products" class="w-full h-auto rounded-2xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-qrcode text-orange-500 text-2xl"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Dual QR Traceability</h4>
+                            <p class="text-sm text-gray-600">Track ingredients & production</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-heart text-orange-500 text-2xl"></i>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">1% for Strays</h4>
+                            <p class="text-sm text-gray-600">Your purchase saves lives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Solutions Section -->
+    <section id="products" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Integrated Solution</h2>
+                <p class="text-lg text-gray-600">Product, Service, Community & Social Good—everything your cat needs to thrive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 shadow-md card-hover">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-shopping-bag text-orange-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Products</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Human-grade ingredients</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Dual QR traceability</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> 15-day production cycle</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Protein customization</li>
+                    </ul>
+                    <img src="https://cdn.royalcanin-weshare-online.io/2kBwD48BRYZmsWpcaCpJ/v3/how-to-choose-cat-food-5?w=1440&fm=jpg&auto=format%2Ccompress" alt="Transparent Cat Food" class="w-full h-48 object-cover rounded-lg">
+                </div>
+
+                <!-- Service Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 shadow-md card-hover">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-medkit text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Digital Services</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Digital health profile</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Personalized nutrition plans</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Feeding guides</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Vet consultations</li>
+                    </ul>
+                    <img src="http://p3.itc.cn/images01/20200624/c4ba0c6d1f8c42e2b80d4f05a5a2e612.png" alt="Digital Cat Health" class="w-full h-48 object-cover rounded-lg">
+                </div>
+
+                <!-- Community Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 shadow-md card-hover">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-users text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Meow Fun Community</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Feeding games</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Content sharing</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Offline events</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Feline parent connections</li>
+                    </ul>
+                    <img src="http://p6.itc.cn/images01/20200624/a58bfffbe1724f4f8d1017466e231eeb.png" alt="Cat Community" class="w-full h-48 object-cover rounded-lg">
+                </div>
+
+                <!-- Social Good Card -->
+                <div class="bg-gray-50 rounded-2xl p-6 shadow-md card-hover">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-paw text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Social Responsibility</h3>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> 1% of sales to stray rescue</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Fund usage tracking</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Rescue story sharing</li>
+                        <li><i class="fa fa-check text-green-500 mr-2"></i> Volunteer opportunities</li>
+                    </ul>
+                    <img src="http://p7.itc.cn/images01/20200624/2e5b079a7776413ea8a795b5d0118123.png" alt="Stray Cat Rescue" class="w-full h-48 object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="section-padding bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Membership Benefits</h2>
+                <p class="text-lg text-gray-600">Join our D2C membership community for premium products at near-cost prices.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-8 max-w-5xl mx-auto">
+                <div class="w-full lg:w-1/2 bg-white rounded-2xl shadow-xl p-8 border-t-4 border-orange-500">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Annual Membership</h3>
+                        <p class="text-gray-600 mb-4">First-year promotional price</p>
+                        <div class="flex items-end">
+                            <span class="text-4xl font-bold text-orange-500">¥199</span>
+                            <span class="text-gray-500 line-through ml-3 mb-1">¥299</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Access to all products at near-cost prices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Digital health profile for your cat</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Basic care plan (worth ¥9.9/month)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Meow Fun Community access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Stray rescue fund tracking</span>
+                        </li>
+                    </ul>
+                    <a href="#signup" class="block w-full py-3 bg-orange-500 text-white rounded-full font-semibold text-center hover:bg-orange-600 transition shadow-lg">
+                        Join Now
+                    </a>
+                </div>
+
+                <div class="w-full lg:w-1/2 bg-white rounded-2xl shadow-xl p-8 border-t-4 border-blue-500">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium Subscription</h3>
+                        <p class="text-gray-600 mb-4">Add-on to membership</p>
+                        <div class="flex items-end">
+                            <span class="text-4xl font-bold text-blue-500">¥29.9</span>
+                            <span class="text-gray-500 ml-3 mb-1">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Live vet consultations (unlimited)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Personalized nutrition plans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Early access to new products</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Exclusive partner discounts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-green-500 mt-1 mr-3 text-lg"></i>
+                            <span>Priority in offline events</span>
+                        </li>
+                    </ul>
+                    <a href="#upgrade" class="block w-full py-3 bg-blue-500 text-white rounded-full font-semibold text-center hover:bg-blue-600 transition shadow-lg">
+                        Upgrade Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section id="download" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://k.sinaimg.cn/n/spider20220804/426/w649h577/20220804/fc08-291f572d0f12162e0d7cd2a934de80ae.png/w700d1q75cms.jpg?by=cms_fixed_width" alt="SERENDI CAT App Preview" class="w-full h-auto rounded-2xl shadow-2xl">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">All-in-One App for Your Cat</h2>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa fa-user-md text-orange-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">Health Tracking</h4>
+                                <p class="text-gray-600">Create a digital health profile to monitor your cat's weight, diet, and health status.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa fa-cutlery text-green-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">Scientific Feeding</h4>
+                                <p class="text-gray-600">Get personalized nutrition plans based on your cat's age, breed, and health condition.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa fa-share-alt text-purple-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">Community Sharing</h4>
+                                <p class="text-gray-600">Share photos, stories, and tips with other cat parents in the Meow Fun Community.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa fa-line-chart text-blue-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-900 mb-1">Fund Tracking</h4>
+                                <p class="text-gray-600">Monitor how your purchase contributes to stray cat rescue with real-time fund updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#" class="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition">
+                            <i class="fa fa-apple text-2xl"></i>
+                            <div>
+                                <div class="text-xs">Download on the</div>
+                                <div class="font-semibold">App Store</div>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-full font-medium hover:bg-gray-800 transition">
+                            <i class="fa fa-android text-2xl"></i>
+                            <div>
+                                <div class="text-xs">GET IT ON</div>
+                                <div class="font-semibold">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Good Section -->
+    <section id="social-good" class="section-padding bg-green-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Consumption as Charity</h2>
+                <p class="text-lg text-gray-600">Every purchase you make helps rescue stray cats in need.</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="https://wy-static.wenxiaobai.com/aigc-online/delogo_18aa65be-fc2e-4765-9829-7886d0107b1b.webp?ratioWH=1.4512471655328798&type=opt" alt="Stray Cat Rescue" class="w-full h-auto rounded-2xl shadow-xl">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">How We Make an Impact</h3>
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
+                            <p class="text-gray-700">1% of all sales goes to our stray cat rescue fund.</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
+                            <p class="text-gray-700">Funds are used for food, medical care, and adoption events.</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
+                            <p class="text-gray-700">Track fund usage and rescue stories via the SERENDI CAT App.</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">4</div>
+                            <p class="text-gray-700">Join volunteer opportunities to help stray cats directly.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-6">
+                        <h4 class="font-semibold text-gray-900 mb-3">Rescue Impact So Far</h4>
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div>
+                                <div class="text-2xl font-bold text-green-600">500+</div>
+                                <div class="text-sm text-gray-600">Cats Rescued</div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-green-600">300+</div>
+                                <div class="text-sm text-gray-600">Cats Adopted</div>
+                                <div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-green-600">¥100k+</div>
+                                <div class="text-sm text-gray-600">Fund Raised</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#impact" class="inline-block px-8 py-3 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition shadow-lg">
+                        View Full Impact Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fa fa-paw text-orange-500 text-2xl"></i>
+                        <span class="text-2xl font-bold">SERENDI CAT</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">For Love, For Cat. Redefining cat parenting with trust, science, and compassion.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">
+                            <i class="fa fa-wechat"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#products" class="text-gray-400 hover:text-orange-500 transition">Products</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-orange-500 transition">Services</a></li>
+                        <li><a href="#community" class="text-gray-400 hover:text-orange-500 transition">Community</a></li>
+                        <li><a href="#social-good" class="text-gray-400 hover:text-orange-500 transition">Social Good</a></li>
+                        <li><a href="#membership" class="text-gray-400 hover:text-orange-500 transition">Membership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Return Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for cat care tips, product updates, and rescue stories.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 bg-gray-800 rounded-l-full text-white focus:outline-none focus:ring-2 focus:ring-orange-500 w-full">
+                        <button type="submit" class="px-4 py-2 bg-orange-500 rounded-r-full hover:bg-orange-600 transition">
+                            <i class="fa fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 SERENDI CAT. All rights reserved. "For Love, For Cat" is a trademark of SERENDI CAT.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
